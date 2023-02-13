@@ -1,2 +1,4 @@
-# lsystems_3d
-A small experiment visualizing L-Systems in 3D using Three.js
+# L-systems in 3D
+ 3D L-system rendering with Three.js.
+ 
+ ![Paths](https://i.imgur.com/eGi7VNY.png)

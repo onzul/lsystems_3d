@@ -1,0 +1,33 @@
+
+<html lang="en">
+    <head>
+        <title>L-Systems</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <canvas id="c"></canvas>
+
+        <div id="ui">
+            <p>
+                <b>Rules:</b> X → <i id="ui_rules1"></i>, F → <i id="ui_rules2"></i>
+                <span style="padding-left: 20px"><b>Axiom:</b> <i id="ui_axiom"></i></span>
+                <span style="padding-left: 20px"><b>Angle:</b> <i id="ui_angle"></i></span>
+                <span style="padding-left: 20px"><b>Loops:</b> <i id="ui_loop"></i></span>
+            </p>
+            <p><b>Generated [<span id="ui_generated_count">0</span>]:</b> <i id="ui_generated"></i></p>
+        </div>
+        <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+        <script type="importmap">
+			{
+				"imports": {
+					"three": "./three.module.js",
+					"three/orbit": "./OrbitControls.js"
+				}
+			}
+		</script>
+        <!-- <script type="module" src="main.js"></script> -->
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
